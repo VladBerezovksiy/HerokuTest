@@ -40,8 +40,10 @@ public class NotificationMessagesTest {
     }
 
     private void validateCheckOnNotification(String expectedSuccessfulResult, String expectedUnsuccessfulResult, String actualNotificationText) {
-        Assert.assertEquals(actualNotificationText, expectedSuccessfulResult, "Неверное соответствие текста уведомления на успешность");
-        Assert.assertEquals(actualNotificationText, expectedUnsuccessfulResult, "Неверное соответствие текста уведомления на не успешность");
+        Assert.assertEquals(actualNotificationText,
+                expectedSuccessfulResult, "Неверное соответствие текста уведомления на успешность");
+        Assert.assertEquals(actualNotificationText,
+                expectedUnsuccessfulResult, "Неверное соответствие текста уведомления на не успешность");
     }
 
     @AfterClass
